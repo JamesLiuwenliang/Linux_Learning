@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #define PAGELEN 24
 #define LINELEN 512
-
+/** 
+ * 优化方案：从标准输入中读入要分页的数据，直接从键盘读用户的输入 
+ */
 int see_more(FILE *cmd){
     int c ;
     printf("\033[7m more? \033[m");

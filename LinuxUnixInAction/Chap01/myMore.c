@@ -27,9 +27,9 @@ int see_more(){
 }
 
 void do_more(FILE *fp){
-    char line[LINELEN];
+    char line[LINELEN]; // 只能获取一行
     int num_of_lines = 0;
-    int see_more() ,reply;
+    int reply;
 
     while(fgets(line ,LINELEN,fp)){
         if(num_of_lines == PAGELEN){
